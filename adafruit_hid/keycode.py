@@ -45,52 +45,6 @@ class Keycode:
     different variations of a keyboard.
     """
 
-    A = 0x04
-    B = 0x05
-    C = 0x06
-    D = 0x07
-    E = 0x08
-    F = 0x09
-    G = 0x0A
-    H = 0x0B
-    I = 0x0C
-    J = 0x0D
-    K = 0x0E
-    L = 0x0F
-    M = 0x10
-    N = 0x11
-    O = 0x12
-    P = 0x13
-    Q = 0x14
-    R = 0x15
-    S = 0x16
-    T = 0x17
-    U = 0x18
-    V = 0x19
-    W = 0x1A
-    X = 0x1B
-    Y = 0x1C
-    Z = 0x1D
-    ONE = 0x1E
-    """``1`` and ``!``"""
-    TWO = 0x1F
-    """``2`` and ``@``"""
-    THREE = 0x20
-    """``3`` and ``#``"""
-    FOUR = 0x21
-    """``4`` and ``$``"""
-    FIVE = 0x22
-    """``5`` and ``%``"""
-    SIX = 0x23
-    """``6`` and ``^``"""
-    SEVEN = 0x24
-    """``7`` and ``&``"""
-    EIGHT = 0x25
-    """``8`` and ``*``"""
-    NINE = 0x26
-    """``9`` and ``(``"""
-    ZERO = 0x27
-    """``0`` and ``)``"""
     ENTER = 0x28
     """Enter (Return)"""
     RETURN = ENTER
@@ -104,28 +58,7 @@ class Keycode:
     SPACEBAR = 0x2C
     MINUS = 0x2D
     """``-` and ``_``"""
-    EQUALS = 0x2E
-    """``=` and ``+``"""
-    LEFT_BRACKET = 0x2F
-    """``[`` and ``{``"""
-    RIGHT_BRACKET = 0x30
-    """``]`` and ``}``"""
     BACKSLASH = 0x31
-    r"""``\`` and ``|``"""
-    POUND = 0x32
-    """``#`` and ``~`` (Non-US keyboard)"""
-    SEMICOLON = 0x33
-    """``;`` and ``:``"""
-    QUOTE = 0x34
-    """``'`` and ``"``"""
-    GRAVE_ACCENT = 0x35
-    r""":literal:`\`` and ``~``"""
-    COMMA = 0x36
-    """``,`` and ``<``"""
-    PERIOD = 0x37
-    """``.`` and ``>``"""
-    FORWARD_SLASH = 0x38
-    """``/`` and ``?``"""
 
     CAPS_LOCK = 0x39
 
@@ -177,42 +110,9 @@ class Keycode:
     UP_ARROW = 0x52
     """Moves the cursor up."""
 
-    KEYPAD_NUMLOCK = 0x53
-    """Num Lock (Clear on Mac)"""
-    KEYPAD_FORWARD_SLASH = 0x54
-    KEYPAD_ASTERISK = 0x55
-    KEYPAD_MINUS = 0x56
-    KEYPAD_PLUS = 0x57
-    KEYPAD_ENTER = 0x58
-    KEYPAD_ONE = 0x59
-    """Keypad ``1`` and End"""
-    KEYPAD_TWO = 0x5A
-    """Keypad ``2`` and Down Arrow"""
-    KEYPAD_THREE = 0x5B
-    """Keypad ``3`` and PgDn"""
-    KEYPAD_FOUR = 0x5C
-    """Keypad ``4`` and Left Arrow"""
-    KEYPAD_FIVE = 0x5D
-    KEYPAD_SIX = 0x5E
-    """Keypad ``6`` and Right Arrow"""
-    KEYPAD_SEVEN = 0x5F
-    """Keypad ``7`` and Home"""
-    KEYPAD_EIGHT = 0x60
-    """Keypad ``8`` and Up Arrow"""
-    KEYPAD_NINE = 0x61
-    """Keypad ``9`` and PgUp"""
-    KEYPAD_ZERO = 0x62
-    """Keypad ``0`` and Ins"""
-    KEYPAD_PERIOD = 0x63
-    """Keypad ``.`` and Del"""
-    KEYPAD_BACKSLASH = 0x64
-    """Keypad ``\\`` and ``|`` (Non-US)"""
-
     APPLICATION = 0x65
     """Application. Also known as the Menu key (Windows)."""
-    POWER = 0x66
-    """Power (Mac)"""
-    KEYPAD_EQUALS = 0x67
+
     """Keypad ``=`` (Mac)"""
     F13 = 0x68
     """Function key F13 (Mac)"""
@@ -229,30 +129,14 @@ class Keycode:
     F19 = 0x6E
     """Function key F19 (Mac)"""
 
-    LEFT_CONTROL = 0xE0
+    CONTROL = 0xE0
     """Control modifier left of the spacebar."""
-    CONTROL = LEFT_CONTROL
-    """Alias for LEFT_CONTROL."""
-    LEFT_SHIFT = 0xE1
+    SHIFT = 0xE1
     """Shift modifier left of the spacebar."""
-    SHIFT = LEFT_SHIFT
-    """Alias for LEFT_SHIFT."""
-    LEFT_ALT = 0xE2
+    ALT = 0xE2
     """Alt modifier left of the spacebar."""
-    ALT = LEFT_ALT
-    """Alias for LEFT_ALT. Alt is also known as Option (Mac)."""
-    LEFT_GUI = 0xE3
+    GUI = 0xE3
     """GUI modifier left of the spacebar."""
-    GUI = LEFT_GUI
-    """Alias for LEFT_GUI. GUI is also known as the Windows key, Command (Mac), or Meta."""
-    RIGHT_CONTROL = 0xE4
-    """Control modifier right of the spacebar."""
-    RIGHT_SHIFT = 0xE5
-    """Shift modifier right of the spacebar."""
-    RIGHT_ALT = 0xE6
-    """Alt modifier right of the spacebar."""
-    RIGHT_GUI = 0xE7
-    """GUI modifier right of the spacebar."""
 
     @classmethod
     def modifier_bit(cls, keycode):
